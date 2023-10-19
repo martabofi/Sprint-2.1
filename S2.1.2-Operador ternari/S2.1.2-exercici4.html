@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S2.1.2-exercici4</title>
+</head>
+
+<body>
+    <script>
+
+        let imprimirResultat = "";
+        function parOImpar(array) {
+            for (let i = 0; i < array.length; i++) {
+                const resultat = array[i] % 2 === 0 ? "parell" : "imparell"; 
+                imprimirResultat += "El número " + array[i] + " és " + resultat;
+            }
+        };
+
+        let array = [8, 5, 18];
+        parOImpar(array);
+        console.log(imprimirResultat);
+
+    </script>
+
+</body>
+
+</html>

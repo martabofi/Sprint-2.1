@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S2.1.2-exercici3</title>
+</head>
+
+<body>
+    <script>
+        
+        let numero = 5;
+        const tipusNum = numero > 0 ? "Positiu" : numero < 0 ? "Negatiu" : "Zero";
+        console.log(tipusNum);
+
+
+        function trobarMaxim(a, b, c) {
+            return a > b ? (a > c ? a : c) : b > a ? (b > c ? b : c) : c;
+        };
+        let a = 100;
+        let b = 80;
+        let c = 30;
+        let resultat = trobarMaxim(a, b, c);
+        console.log(resultat);
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S2.1.7-exercici3</title>
+</head>
+
+<body>
+    <script>
+
+        function validarInput(input) {
+            return new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    if (input === "Hola") {
+                        resolve("L'input és igual a Hola")
+                    } else {
+                        reject("L'input NO és igual a Hola")
+                    }
+                }, 2000);
+            })
+        };
+
+        validarInput("Hola")
+        .then((missatge) => {
+            console.log(missatge);
+        })
+        .catch((error) => {
+            console.error(error);
+        })
+
+    </script>
+
+</body>
+
+</html>

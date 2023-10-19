@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S2.1.3-exercici3</title>
+</head>
+
+<body>
+    <script>
+
+        function esperarISaludar(nom, callback) {
+            setTimeout(function() {
+            callback(nom);
+        }, 2000);
+        }
+
+        function saludar(nom) {
+            console.log(`Hola ${nom}!`);
+        }
+
+        let nom = "Marta";
+
+        esperarISaludar(nom, saludar);
+
+    </script>
+</body>
+
+</html>

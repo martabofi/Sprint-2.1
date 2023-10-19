@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S2.1.3-exercici1</title>
+</head>
+
+<body>
+    <script>
+
+        function processar(numero, callback) {
+            callback(numero);
+        };
+        function imprimirNumero(numero) {
+            console.log("El número és " + numero);
+        }
+        let numero = 5;
+        processar(numero, imprimirNumero);
+
+    </script>
+</body>
+
+</html>

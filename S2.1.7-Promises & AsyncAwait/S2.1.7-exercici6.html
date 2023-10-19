@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S2.1.7-exercici6</title>
+</head>
+
+<body>
+    <script>
+
+        const promesa1 = new Promise((resolve, reject) => {
+            setTimeout(() => {
+                resolve("Hola, món");
+            }, 2000);
+        });
+
+        const promesa2 = new Promise((resolve, reject) => {
+            setTimeout(() => {
+                resolve("Hola, món 2");
+            }, 3000);
+        });
+
+        Promise.all([promesa1, promesa2])
+            .then((resultats) => {
+
+                console.log("Promesa 1:", resultats[0]);
+                console.log("Promesa 2:", resultats[1]);
+            })
+            .catch((error) => {
+                console.error("Hi ha hagut un error:", error);
+            });
+
+    </script>
+
+</body>
+
+</html>
